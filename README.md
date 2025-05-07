@@ -66,6 +66,29 @@ In software development, requirements are typically categorized into **Functiona
 | **Non-functional**     | Describes how the system should behave—its qualities and constraints.       | - Handle high traffic using load balancers and microservices <br> - Fast API response time via Redis and CDN <br> - Secure data transmission (HTTPS, authentication) <br> - Scalable data storage with Cassandra <br> - High system uptime and fault tolerance |
 
 Functional requirements focus on **features**, while non-functional requirements focus on **performance, security, and reliability**. Both are essential for building a robust and user-friendly system.
+## Acceptance Criteria
+
+### Importance of Acceptance Criteria in Requirement Analysis
+
+**Acceptance Criteria** define the conditions that must be met for a feature or system to be considered complete and functional. They provide a clear understanding of what needs to be implemented and set measurable goals to verify that the functionality is working as expected. Acceptance criteria are crucial in requirement analysis because they:
+
+- **Ensure Clarity**: Provide a precise definition of the expected behavior for features.
+- **Guide Development and Testing**: Serve as a reference for developers during implementation and for testers during validation.
+- **Set Expectations**: Help all stakeholders, including product owners, developers, and users, agree on what "done" looks like.
+- **Improve Quality**: By specifying conditions, it becomes easier to identify defects or incomplete features early in development.
+
+### Example of Acceptance Criteria: Checkout Feature
+
+| **Criteria**                     | **Description**                                                                                                                                  |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Booking Summary Display**       | The system must display a summary of the booking, including hotel name, room type, check-in/check-out dates, number of guests, and total price. |
+| **User Authentication**           | The system must require users to be logged in to complete the booking. Users who are not logged in should be prompted to log in or create an account. |
+| **Payment Gateway Integration**   | The system must allow users to choose a payment method (credit card, PayPal, etc.). The payment gateway must be securely integrated.           |
+| **Email Confirmation**            | After successful payment, the system should send a booking confirmation email to the customer with the booking details and payment receipt.    |
+| **Booking Confirmation Page**     | After payment is confirmed, the user should be redirected to a booking confirmation page displaying a unique reference number.                  |
+| **Error Handling**                | If payment fails, the user should receive an error message and be prompted to retry or use a different payment method.                           |
+
+This table format allows for easy reading and quick reference of the acceptance criteria for the **Checkout feature** in the hotel booking system.
 
 
 
