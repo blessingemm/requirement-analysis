@@ -56,6 +56,18 @@ Requirement Analysis involves several structured activities to ensure that the s
 
 Each of these activities is essential for building a strong foundation that supports the design, development, and deployment of a successful software product.
 
+## Types of Requirements
+
+In software development, requirements are typically categorized into **Functional** and **Non-functional** types. The table below provides a comparison along with real-world examples from a hotel booking management system like Airbnb, OYO, or Booking.com.
+
+| Requirement Type       | Description                                                                 | Example in Hotel Booking System                                                                 |
+|------------------------|-----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| **Functional**         | Describes what the system should do—its features and operations.            | - User registration and login <br> - Search hotels by location and date <br> - Book and cancel rooms <br> - View and manage bookings <br> - Process payments through third-party services |
+| **Non-functional**     | Describes how the system should behave—its qualities and constraints.       | - Handle high traffic using load balancers and microservices <br> - Fast API response time via Redis and CDN <br> - Secure data transmission (HTTPS, authentication) <br> - Scalable data storage with Cassandra <br> - High system uptime and fault tolerance |
+
+Functional requirements focus on **features**, while non-functional requirements focus on **performance, security, and reliability**. Both are essential for building a robust and user-friendly system.
+
+
 
 
 
