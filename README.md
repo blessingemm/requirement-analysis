@@ -30,6 +30,31 @@ Requirement Analysis is essential for the success of any software development pr
 | **Enhances Communication**        | Facilitates clear communication between stakeholders and developers, reducing misunderstandings.|
 | **Guides Project Planning**       | Helps in accurate estimation of time, cost, and resources, ensuring smooth project execution.    |
 
+## Key Activities in Requirement Analysis
+
+Requirement Analysis involves several structured activities to ensure that the software requirements are complete, clear, and aligned with stakeholder expectations. Below are the five key activities:
+
+- **Requirement Gathering**
+  - This is the initial step where information is collected from stakeholders, users, and other sources.
+  - Techniques include interviews, surveys, questionnaires, and studying existing systems or documentation.
+
+- **Requirement Elicitation**
+  - Elicitation goes beyond gathering—it's about drawing out and discovering hidden or implicit needs.
+  - It involves active interaction with stakeholders to clarify and understand their expectations and constraints.
+
+- **Requirement Documentation**
+  - This step involves formally recording all the gathered and elicited requirements in a structured format.
+  - Common outputs include Software Requirements Specifications (SRS), use cases, and user stories.
+
+- **Requirement Analysis and Modeling**
+  - At this stage, the requirements are analyzed to detect conflicts, overlaps, or inconsistencies.
+  - Modeling techniques such as data flow diagrams (DFDs), entity-relationship diagrams (ERDs), or UML are used to represent requirements visually.
+
+- **Requirement Validation**
+  - The final activity ensures that the documented requirements are complete, correct, feasible, and testable.
+  - It involves reviews, walkthroughs, and feedback sessions with stakeholders to gain formal approval.
+
+Each of these activities is essential for building a strong foundation that supports the design, development, and deployment of a successful software product.
 
 
 
