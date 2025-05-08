@@ -66,31 +66,44 @@ In software development, requirements are typically categorized into **Functiona
 | **Non-functional**     | Describes how the system should behave—its qualities and constraints.       | - Handle high traffic using load balancers and microservices <br> - Fast API response time via Redis and CDN <br> - Secure data transmission (HTTPS, authentication) <br> - Scalable data storage with Cassandra <br> - High system uptime and fault tolerance |
 
 Functional requirements focus on **features**, while non-functional requirements focus on **performance, security, and reliability**. Both are essential for building a robust and user-friendly system.
+
+## Use Case Diagrams
+
+Use Case Diagrams visually represent the interactions between users (actors) and a system. They help in identifying how different users interact with the system’s features, making them a valuable tool in requirement analysis.
+
+### Benefits
+- Clarify system functionalities.
+- Improve communication between stakeholders.
+- Serve as a blueprint for developers and testers.
+
+### Actors and Use Cases
+
+| Actor     | Use Cases                          |
+|-----------|------------------------------------|
+| Customer  | Search Availability, Make Booking, Cancel Booking, View Booking |
+| Admin     | Manage Booking, Add/Remove Services, View Booking              |
+
+### Diagram
+
+![Use Case Diagram](alx-booking-uc.png)
+
 ## Acceptance Criteria
 
-### Importance of Acceptance Criteria in Requirement Analysis
+**Acceptance Criteria** are the conditions that a software product must meet to be accepted by a user, customer, or other stakeholders. In the context of **Requirement Analysis**, acceptance criteria play a vital role in ensuring that the features developed align with user expectations and project requirements.
 
-**Acceptance Criteria** define the conditions that must be met for a feature or system to be considered complete and functional. They provide a clear understanding of what needs to be implemented and set measurable goals to verify that the functionality is working as expected. Acceptance criteria are crucial in requirement analysis because they:
+### Importance of Acceptance Criteria
 
-- **Ensure Clarity**: Provide a precise definition of the expected behavior for features.
-- **Guide Development and Testing**: Serve as a reference for developers during implementation and for testers during validation.
-- **Set Expectations**: Help all stakeholders, including product owners, developers, and users, agree on what "done" looks like.
-- **Improve Quality**: By specifying conditions, it becomes easier to identify defects or incomplete features early in development.
+- ✅ **Defines Scope Clearly**: Sets boundaries for what is included or excluded in a feature.
+- ✅ **Guides Development**: Helps developers understand the expected functionality.
+- ✅ **Supports Testing**: Provides a clear basis for test cases.
+- ✅ **Ensures User Satisfaction**: Aligns final product with stakeholder expectations.
 
-### Example of Acceptance Criteria: Checkout Feature
+### Example: Checkout Feature Acceptance Criteria
 
-| **Criteria**                     | **Description**                                                                                                                                  |
-|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Booking Summary Display**       | The system must display a summary of the booking, including hotel name, room type, check-in/check-out dates, number of guests, and total price. |
-| **User Authentication**           | The system must require users to be logged in to complete the booking. Users who are not logged in should be prompted to log in or create an account. |
-| **Payment Gateway Integration**   | The system must allow users to choose a payment method (credit card, PayPal, etc.). The payment gateway must be securely integrated.           |
-| **Email Confirmation**            | After successful payment, the system should send a booking confirmation email to the customer with the booking details and payment receipt.    |
-| **Booking Confirmation Page**     | After payment is confirmed, the user should be redirected to a booking confirmation page displaying a unique reference number.                  |
-| **Error Handling**                | If payment fails, the user should receive an error message and be prompted to retry or use a different payment method.                           |
-
-This table format allows for easy reading and quick reference of the acceptance criteria for the **Checkout feature** in the hotel booking system.
-
-
-
-
-
+| **ID** | **Acceptance Criteria**                                                                 |
+|-------|------------------------------------------------------------------------------------------|
+| AC-001 | User must be logged in to initiate checkout.                                            |
+| AC-002 | The system should calculate the total price including taxes and discounts before payment. |
+| AC-003 | Checkout process must support at least one payment gateway (e.g., Paystack or Stripe). |
+| AC-004 | User should receive a confirmation message and email after successful payment.         |
+| AC-005 | If payment fails, user should see an appropriate error message and option to retry.     |
